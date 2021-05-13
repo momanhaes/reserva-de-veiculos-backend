@@ -7,7 +7,7 @@ git clone https://github.com/momanhaes/reserva-de-veiculos-backend
 ```
 
 O projeto foi desenvolvido com as tecnologias: NodeJS, TypeScript, MongoDB e Docker. 
-É necessário ter o Docker instalado no seu computador.
+É necessário ter o Docker Desktop instalado no seu computador, caso use Windows, para poder configurar o banco de dados. 
 
 ## Configuração do Banco de Dados
 
