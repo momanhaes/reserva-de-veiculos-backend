@@ -72,3 +72,45 @@ npm start
 * passwordConfirmation: string;
 
 ### Endpoint de Veículos
+
+#### Criação de Veículo
+
+**[POST]** `/vehicles` 
+* name: string;
+* externalCode: string;
+* description: string;
+* status: string;
+* category: string;
+* dailyValue: string;
+* image: string;
+* year: string;
+* conservation: string;
+* fuel: string;
+* rentedBy: string;
+
+#### Listagem de Veículos
+
+**[GET]** `/vehicles` 
+
+#### Busca de Veículo por ID
+
+**[GET]** `/vehicles:externalCode`
+
+#### Criação de Veículo
+
+**[PATCH]** `/vehicles:externalCode` 
+* name: string;
+* externalCode: string;
+* description: string;
+* status: string;
+* category: string;
+* dailyValue: string;
+* image: string;
+* year: string;
+* conservation: string;
+* fuel: string;
+* rentedBy: string;
+
+#### Deleção de Veículo por ID
+
+**[DELETE]** `/vehicles:externalCode`
