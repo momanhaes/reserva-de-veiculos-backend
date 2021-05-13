@@ -43,7 +43,7 @@ docker start { CONTAINER ID }
 
 ## Inicialização da API
 
-Digite os comandos abaixo e verifique se tudo foi conectado corretamente
+Digite os comandos abaixo e verifique se tudo foi conectado corretamente:
 
 ```sh
 npm install
@@ -54,3 +54,17 @@ npm start
 ```
 
 ## Documentação da API
+
+### Endpoint de Usuários
+
+_[POST]_ Login `/users/login` 
+* email: string;
+* password: string;
+  
+_[POST]_ Criação de Usuário `/users` 
+* name: string;
+* email: string;
+* password: string;
+* passwordConfirmation: string;
+
+### Endpoint de Veículos
