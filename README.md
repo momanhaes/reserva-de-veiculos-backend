@@ -88,7 +88,7 @@ npm start
 * fuel: string;
 * rentedBy: string;
 
-#### Criação de Veículo
+#### Edição de Veículo
 
 **[PATCH]** `/vehicles:externalCode` 
 * name: string;
@@ -102,15 +102,17 @@ npm start
 * conservation: string;
 * fuel: string;
 * rentedBy: string;
+* 
+#### Deleção de Veículo por ID
 
-#### Listagem de Veículos
-
-**[GET]** `/vehicles` 
+**[DELETE]** `/vehicles:externalCode`
 
 #### Busca de Veículo por ID
 
 **[GET]** `/vehicles:externalCode`
 
-#### Deleção de Veículo por ID
+#### Listagem de Veículos
 
-**[DELETE]** `/vehicles:externalCode`
+**[GET]** `/vehicles` 
+
+
