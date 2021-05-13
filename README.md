@@ -111,6 +111,10 @@ npm start
 
 **[GET]** `/vehicles:externalCode`
 
+#### Busca de Veículo por Keyword
+
+**[GET]** `/vehicles?keyword=carro`
+
 #### Listagem de Veículos
 
 **[GET]** `/vehicles` 
