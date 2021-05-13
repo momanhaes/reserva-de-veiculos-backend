@@ -57,11 +57,15 @@ npm start
 
 ### Endpoint de Usuários
 
-_[POST]_ Login `/users/login` 
+#### Login
+
+**[POST]** `/users/login` 
 * email: string;
 * password: string;
   
-_[POST]_ Criação de Usuário `/users` 
+#### Criação de Usuário
+
+**[POST]** `/users` 
 * name: string;
 * email: string;
 * password: string;
