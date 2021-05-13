@@ -3,7 +3,7 @@
 Clone o repositório usando o comando abaixo:
 
 ```sh
-git clone https://github.com/momanhaes/reserva-de-veiculos-backend`
+git clone https://github.com/momanhaes/reserva-de-veiculos-backend
 ```
 
 O projeto foi desenvolvido com as tecnologias: NodeJS, TypeScript, MongoDB e Docker. 
