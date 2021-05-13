@@ -8,7 +8,7 @@ const VehicleModel = model('Vehicle', new Schema({
     status: String,
     category: String,
     dailyValue: Number,
-    image: String,
+    imageUrl: String,
     year: String,
     conservation: String,
     fuel: String,
