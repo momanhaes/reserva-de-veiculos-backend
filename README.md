@@ -85,7 +85,7 @@ npm start
 * description: string;
 * status: string;
 * category: string;
-* dailyValue: string;
+* dailyValue: number;
 * image: string;
 * year: string;
 * conservation: string;
@@ -100,7 +100,7 @@ npm start
 * description: string;
 * status: string;
 * category: string;
-* dailyValue: string;
+* dailyValue: number;
 * image: string;
 * year: string;
 * conservation: string;
