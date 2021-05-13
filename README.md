@@ -102,7 +102,7 @@ npm start
 * conservation: string;
 * fuel: string;
 * rentedBy: string;
-* 
+  
 #### Deleção de Veículo por ID
 
 **[DELETE]** `/vehicles:externalCode`
