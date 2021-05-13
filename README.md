@@ -41,6 +41,10 @@ Copie o CONTAINER ID do Mongo e execute o comando abaixo:
 docker start { CONTAINER ID }
 ```
 
+Na GUI do Mongo (Robo 3T) crie uma nova conexão com os parâmetros abaixo, a fim de obter um resultado visual da persistência dos dados:
+
+`Vá em Connections > Create > Name: nodeapi > Address: localhost > Porta: 27017 > Save`
+
 ## Inicialização da API
 
 Digite os comandos abaixo e verifique se tudo foi conectado corretamente:
