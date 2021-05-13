@@ -7,11 +7,11 @@ const createVehicleSchema = Joi.object({
     status: Joi.string(),
     category: Joi.string(),
     dailyValue: Joi.number(),
-    image: Joi.string(),
+    image: Joi.string().allow(''),
     year: Joi.string(),
     conservation: Joi.string(),
     fuel: Joi.string(),
-    rentedBy: Joi.string(),
+    rentedBy: Joi.string().allow(null, '')
 });
 
 const updateVehicleSchema = Joi.object({
@@ -20,11 +20,11 @@ const updateVehicleSchema = Joi.object({
     status: Joi.string(),
     category: Joi.string(),
     dailyValue: Joi.number(),
-    image: Joi.string(),
+    image: Joi.string().allow(null, ''),
     year: Joi.string(),
     conservation: Joi.string(),
     fuel: Joi.string(),
-    rentedBy: Joi.string(),
+    rentedBy: Joi.string().allow(null, '')
 });
 
 export {
