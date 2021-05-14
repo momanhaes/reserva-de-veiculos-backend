@@ -14,7 +14,7 @@ export default {
     } catch (err) {
       if (err.code === 11000)
         throw new VehicleError(
-          `ExternalCode ${vehicle.externalCode} already in use`,
+          `ExternalCode ${vehicle.externalCode} já em uso`,
           400
         );
 
