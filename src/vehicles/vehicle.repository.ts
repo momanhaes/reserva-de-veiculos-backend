@@ -49,6 +49,7 @@ function buildKeywordFilter(keyword: string): object {
       { externalCode: keyword },
       { name: caseInsensitiveKeywordRegex },
       { description: caseInsensitiveKeywordRegex },
+      { status: caseInsensitiveKeywordRegex },
       { category: caseInsensitiveKeywordRegex },
       { year: caseInsensitiveKeywordRegex },
       { conservation: caseInsensitiveKeywordRegex },
