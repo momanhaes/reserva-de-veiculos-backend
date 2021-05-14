@@ -6,7 +6,7 @@ export default {
     async create(userInfo: UserInfo): Promise<User | never> {
         const isEmailUsed = await UserRepository.existsByEmail(userInfo.email);
         if (isEmailUsed) {
-            throw new UserError(`Email ${userInfo.email} already in use`, 400);
+            throw new UserError(`Email ${userInfo.email} já está em uso.`, 400);
         }
 
         const userId = UserRepository.generateId();
@@ -16,16 +16,16 @@ export default {
     },
 
     async login({ email, password }: LoginInfo): Promise<User | never> {
-        const defaultErrorMessage = 'Unauthorized login';
+        const defaultErrorMessage = 'Login não autorizado.';
 
         const user = await UserRepository.findByEmail(email);
         if (!user) {
-            console.error(`User ${email} not found`);
+            console.error(`Usuário ${email} não encontrado.`);
             throw new UserError(defaultErrorMessage, 401);
         }
 
         if (user.password !== password) {
-            console.error(`Invalid password`);
+            console.error(`Senha inválida.`);
             throw new UserError(defaultErrorMessage, 401);
         }
 
